@@ -1,0 +1,14 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+META.yml
+t/Class-Superclasses_01.t
+t/Class-Superclasses_02.t
+t/Class-Superclasses_03.t
+t/Class-Superclasses_04.t
+t/test_expression_isa.pm
+t/test_quotelike_isa.pm
+t/test_expression_base.pm
+t/test_quotelike_base.pm
+lib/Class/Superclasses.pm

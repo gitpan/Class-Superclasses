@@ -1,0 +1,14 @@
+Revision history for Perl extension Class::Superclass.
+
+0.01  Tue May 16 10:26:06 2006
+	- original version; created by h2xs 1.23 with options
+		-b 5.8.0 -XA -n Class::Superclass
+    - methods added:
+        * new
+        * superclasses
+        * document
+        * _get_base_values
+        * _get_isa_values
+        * _parse_expression
+        * _parse_quotelike
+
