@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use PPI;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new{
   my ($class,$doc) = @_,
@@ -165,6 +165,6 @@ L<PPI>, L<Class::Inheritance>
 =head1 AUTHOR
 
 copyright 2006
-Renee Baecker E<module@renee-baecker.de>
+Renee Baecker E<lt>module@renee-baecker.deE<gt>
 
 =cut

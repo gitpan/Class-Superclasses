@@ -12,3 +12,7 @@ Revision history for Perl extension Class::Superclass.
         * _parse_expression
         * _parse_quotelike
 
+0.02  Sun Jun 18 00:27:32 2006
+
+     - bugfix in POD
+
