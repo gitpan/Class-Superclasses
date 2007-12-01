@@ -13,6 +13,10 @@ Revision history for Perl extension Class::Superclass.
         * _parse_quotelike
 
 0.02  Sun Jun 18 00:27:32 2006
-
      - bugfix in POD
 
+0.03  Tue Dec 01 16:20:13 2007
+     - various bugfixes
+     - added support for parent.pm
+     - added support for quoted tokens
+     - added more tests
