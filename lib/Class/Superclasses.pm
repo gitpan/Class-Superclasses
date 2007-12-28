@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use PPI;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new{
     my ($class,$doc) = @_,
@@ -17,7 +17,7 @@ sub new{
 }# new
 
 sub superclasses{
-    my ($self) = @_;    
+    my ($self) = @_; 
     return wantarray ? @{$self->{super}} : $self->{super};
 }# superclasses
 
@@ -101,10 +101,8 @@ sub _parse_expression{
     my $ref = $variable->find('PPI::Statement::Expression');
     my @parents;
     for my $element($ref->[0]->children()){
-        if($element->class() =~ /^PPI::Token::Quote::/){
-            my $separator = $element->{seperator};
-            (my $value = $element->content()) =~ s~\Q$separator\E(.*)\Q$separator\E~$1~;
-            push(@parents,$value);
+        if($element->class =~ /^PPI::Token::Quote::/){
+            push( @parents,$element->string );
         }
     }
     return @parents;
@@ -113,18 +111,12 @@ sub _parse_expression{
 sub _parse_quotes{
     my ($self,$variable,$type) = @_;
     
-    my %map = (
-        Single => q~'~,
-        Double => q~"~,
-    );
-    
     my @parents;
     
     for my $element( $variable->children ){
         my ($type) = ref($element) =~ /PPI::Token::Quote::([^:]+)$/;
         next unless $type;
-        my $value  = $element->content;
-        $value =~ s/$map{$type}//g;
+        my $value  = $element->string;
         push @parents, $value;
     }
 
@@ -201,7 +193,7 @@ L<PPI>, L<Class::Inheritance>
 
 =head1 AUTHOR
 
-copyright 2006
+copyright 2006 - 2007
 Renee Baecker E<lt>module@renee-baecker.deE<gt>
 
 =cut
