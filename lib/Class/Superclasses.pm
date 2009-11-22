@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use PPI;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub new{
     my ($class,$doc) = @_,
@@ -190,6 +190,11 @@ tells C<Class::Superclasses> which Perl class should be analyzed.
 =head1 SEE ALSO
 
 L<PPI>, L<Class::Inheritance>
+
+=head1 LICENSE
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
 
 =head1 AUTHOR
 
