@@ -1,30 +1,14 @@
-Class-Superclasses version 0.03
-===============================
 
 
-INSTALLATION
+This archive contains the distribution Class-Superclasses,
+version 0.06:
 
-To install this module type the following:
+  Find all (direct) superclasses of a class
 
-   perl Makefile.PL
-   make
-   make test
-   make install
+This software is Copyright (c) 2013 by Renee Baecker.
 
-DEPENDENCIES
+This is free software, licensed under:
 
-This module requires these other modules and libraries:
-
-  PPI
-
-COPYRIGHT AND LICENCE
-
-Put the correct copyright and licence information here.
-
-Copyright (C) 2006,2007 by Renee Baecker
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself, either Perl version 5.8.6 or,
-at your option, any later version of Perl 5 you may have available.
+  The Artistic License 2.0 (GPL Compatible)
 
 
